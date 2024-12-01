@@ -9,10 +9,10 @@ substitutions:
   ##############################
   ## Change only in your      ##
   ## local yaml substitutions ##
-  device_name: nspanel
-  name: ${device_name}
-  friendly_name: ${device_name}
-  ota_password: ${wifi_password}
+  #device_name: nspanel
+  #name: ${device_name}
+  #friendly_name: ${device_name}
+  #ota_password: ${wifi_password}
   temp_units: "°C"
   invalid_cooldown: "100ms"
   bytes_per_char: "1"
