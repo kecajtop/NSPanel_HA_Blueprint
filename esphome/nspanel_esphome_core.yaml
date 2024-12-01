@@ -126,6 +126,9 @@ wifi:
     - id: wifi_default
       ssid: ${wifi_ssid}
       password: ${wifi_password}
+    - ssid: ${wifi_ssid_ha}
+      password: ${wifi_password_ha}
+   use_address: ${IP}
   on_connect:
     then:
       - script.execute: refresh_wifi_icon
@@ -137,7 +140,7 @@ wifi:
 ota:
   - id: ota_std
     platform: esphome
-    password: ${ota_password}
+    password: ${ota}
 
 ##### Adds custom library for NSPanel HA Blueprint project
 nspanel_ha_blueprint:
